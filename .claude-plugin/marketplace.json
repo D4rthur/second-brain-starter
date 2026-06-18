@@ -1,0 +1,14 @@
+{
+  "name": "arkytechs",
+  "owner": {
+    "name": "Arkytechs",
+    "url": "https://arkytechs.com"
+  },
+  "plugins": [
+    {
+      "name": "second-brain-starter",
+      "source": "./",
+      "description": "Monte un second cerveau personnel dans un vault Obsidian local. Gratuit."
+    }
+  ]
+}
