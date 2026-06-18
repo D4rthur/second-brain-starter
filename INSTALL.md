@@ -10,11 +10,9 @@
 Dans Claude Code, ajoute la marketplace puis installe le skill :
 
 ```
-/plugin marketplace add <owner>/second-brain-starter
+/plugin marketplace add D4rthur/second-brain-starter
 /plugin install second-brain-starter@arkytechs
 ```
-
-> Remplace `<owner>` par le compte/org GitHub qui héberge le repo (ex. `<ton-compte>/second-brain-starter`).
 
 Puis invoque-le :
 

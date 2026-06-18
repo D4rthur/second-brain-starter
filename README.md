@@ -23,7 +23,7 @@ Ce skill te le construit. Tu réponds à quelques questions, il scaffold un vaul
 **Claude Code** (par lien, 2 commandes) :
 
 ```
-/plugin marketplace add <owner>/second-brain-starter
+/plugin marketplace add D4rthur/second-brain-starter
 /plugin install second-brain-starter@arkytechs
 ```
 
