@@ -32,7 +32,7 @@ Quand tu as les réponses, résume en 3-4 lignes ce que tu as compris avant de s
 
 ## Étape 2 — Scaffold du vault
 
-Demande à la personne **où** créer le vault (chemin d'un dossier sur sa machine, ex. `~/Documents/Mon-Cerveau`). Si elle n'a pas encore créé le dossier, dis-lui de le faire (ou crée-le si tu as accès au système de fichiers).
+Demande à la personne **où** créer le vault (chemin d'un dossier sur sa machine, ex. `~/Documents/second-brain`). Si elle n'a pas encore créé le dossier, dis-lui de le faire (ou crée-le si tu as accès au système de fichiers).
 
 Crée ensuite cette structure dans le dossier choisi. La structure suit **PARA** (organisation par actionnabilité) et **LYT** (navigation par cartes de contenu) :
 
@@ -76,7 +76,7 @@ Remplis chaque fichier à partir des modèles dans `templates/` de ce skill, en 
 
 Dans les notes réelles (hors `_templates/`), remplace `{{date}}` par la date du jour et `{{title}}` par le nom de la note. Remplace `{NomVault}`, `{Nom}`, `{Rôle}`, `{Secteur}`, `{Langue}` et les autres champs par les vraies valeurs de l'intake. Les fichiers `_exemple-*` servent de démonstration vivante — pré-remplis-les avec le contexte réel de la personne quand c'est possible.
 
-Si tu n'as **pas** accès au système de fichiers (ex. Claude.ai ou ChatGPT dans le navigateur), génère chaque fichier en bloc de code et dis à la personne de les créer manuellement dans Obsidian. Mais le chemin recommandé reste une app de bureau avec accès au dossier : Claude (onglet Code) ou ChatGPT de bureau (ex-Codex).
+Si tu n'as **pas** accès au système de fichiers (ex. Claude.ai ou ChatGPT dans le navigateur), génère chaque fichier en bloc de code et dis à la personne de les créer manuellement dans Obsidian. Mais le chemin recommandé reste une app de bureau avec accès au dossier : Claude (onglet Code) ou Codex, la version code de ChatGPT.
 
 ## Étape 3 — Checklist client (en parallèle)
 

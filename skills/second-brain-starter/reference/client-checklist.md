@@ -11,7 +11,7 @@ Pendant que l'assistant monte le squelette, voici les gestes manuels à faire to
 
 ## 2. Créer le dossier du vault
 
-- [ ] Crée un dossier sur ta machine pour ton cerveau (ex. `Documents/Mon-Cerveau`).
+- [ ] Crée un dossier sur ta machine pour ton cerveau (ex. `Documents/second-brain`).
 - [ ] C'est le chemin que tu donnes à l'assistant pour qu'il scaffold dedans.
 
 ## 3. Ouvrir le dossier comme vault dans Obsidian

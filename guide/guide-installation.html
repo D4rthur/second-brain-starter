@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Second Brain Starter — Guide d'installation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0A0A; --beton-700:#2E2B26; --beton-600:#4A463F; --beton-500:#6B665E;
+    --beton-400:#908B82; --beton-300:#B9B4AC; --beton-200:#D8D4CE; --beton-100:#ECE9E4;
+    --paper:#F7F5F2; --clay:#C4502E; --clay-dark:#A33D1F;
+    --grotesk:"Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --mono:"IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+  }
+  @page { size: Letter; margin: 14mm 15mm 13mm 15mm; }
+  *{ box-sizing:border-box; }
+  body{ font-family:var(--grotesk); color:var(--ink); background:#fff;
+    line-height:1.5; font-size:10.4pt; margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .wrap{ max-width:740px; margin:0 auto; }
+  .label{ font-family:var(--mono); text-transform:uppercase; letter-spacing:.16em;
+    font-size:7.6pt; color:var(--beton-500); }
+  header{ display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:1.5px solid var(--ink); padding-bottom:10px; margin-bottom:8px; }
+  header img{ height:24px; }
+  .crosshair{ color:var(--clay); }
+  .titleblock{ display:flex; justify-content:space-between; align-items:flex-start;
+    border-bottom:1px solid var(--beton-300); padding:14px 0 16px; margin-bottom:16px; }
+  h1{ font-weight:700; font-size:25pt; letter-spacing:-.6px; margin:4px 0 6px; line-height:1.04; }
+  h1 .us{ color:var(--clay); }
+  .sub{ color:var(--beton-600); font-size:10.5pt; }
+  .docmeta{ text-align:right; font-family:var(--mono); font-size:7.8pt;
+    color:var(--beton-500); line-height:1.7; white-space:nowrap; }
+  h2{ font-family:var(--mono); font-weight:600; text-transform:uppercase;
+    letter-spacing:.1em; font-size:9pt; margin:20px 0 0; padding-bottom:5px;
+    border-bottom:1px solid var(--beton-200); display:flex; align-items:center; gap:8px;
+    page-break-after:avoid; }
+  h2::before{ content:""; width:8px; height:8px; background:var(--clay); display:inline-block; }
+  h2.path{ font-size:10pt; margin-top:6px; }
+  .pathtag{ background:var(--ink); color:var(--paper); border-radius:4px; padding:1px 7px; }
+  .step{ border:1px solid var(--beton-200); border-radius:9px; padding:4px 16px 10px;
+    margin:10px 0; background:var(--paper); page-break-inside:avoid; }
+  .step h3{ font-weight:600; margin:9px 0 3px; font-size:11pt; display:flex; align-items:center; gap:10px; }
+  .num{ font-family:var(--mono); font-weight:600; font-size:8.6pt; color:#fff;
+    background:var(--clay); min-width:24px; height:22px; padding:0 5px; border-radius:5px;
+    display:inline-flex; align-items:center; justify-content:center; }
+  .time{ font-family:var(--mono); font-size:7.8pt; color:var(--beton-500); font-weight:400; margin-left:auto; }
+  ol,ul{ margin:5px 0 3px; padding-left:20px; } li{ margin:4px 0; }
+  p{ margin:6px 0; }
+  .kbd{ font-family:var(--mono); font-size:8.8pt; background:var(--beton-100);
+    border:1px solid var(--beton-200); border-radius:4px; padding:0 5px; }
+  .cmd{ font-family:var(--mono); font-size:9.2pt; background:var(--ink); color:var(--paper);
+    padding:6px 12px 6px 26px; border-radius:6px; margin:5px 0; white-space:pre-wrap;
+    position:relative; display:inline-block; }
+  .cmd::before{ content:"›"; position:absolute; left:11px; color:var(--clay); font-weight:600; }
+  .note{ border-left:3px solid var(--clay); background:var(--beton-100); padding:6px 12px;
+    margin:8px 0 4px; font-size:9.6pt; border-radius:0 6px 6px 0; }
+  .note.warn{ border-left-color:var(--ink); }
+  table{ width:100%; border-collapse:collapse; margin:10px 0; font-size:9.4pt; background:#fff;
+    border:1px solid var(--beton-200); border-radius:9px; overflow:hidden; page-break-inside:avoid; }
+  table{ background:var(--paper); }
+  th,td{ text-align:left; vertical-align:top; padding:7px 10px; border-bottom:1px solid var(--beton-200); }
+  th{ font-family:var(--mono); font-size:7.8pt; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--beton-600); background:var(--beton-100); font-weight:600; }
+  tr:last-child td{ border-bottom:none; }
+  h2.path{ page-break-before:auto; }
+  .online{ display:flex; justify-content:space-between; gap:12px; align-items:center;
+    border:1px dashed var(--beton-400); border-radius:9px; padding:8px 14px; font-size:9.2pt; }
+  .online a{ color:var(--clay-dark); font-family:var(--mono); font-size:8.6pt; text-decoration:none; }
+  .trouble td:first-child{ width:38%; font-weight:500; }
+  .pb{ page-break-before:always; }
+  footer{ margin-top:20px; border-top:1.5px solid var(--ink); padding-top:9px;
+    font-family:var(--mono); font-size:8pt; color:var(--beton-500);
+    display:flex; justify-content:space-between; }
+  footer b{ color:var(--clay); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img src="wordmark-ink.svg" alt="arkytechs">
+  <div class="label"><span class="crosshair">+</span>&nbsp; AKT · EST. 2025</div>
+</header>
+
+<div class="titleblock">
+  <div>
+    <div class="label">Guide d'installation · 002</div>
+    <h1>Second Brain<br>Starter<span class="us">_</span></h1>
+    <div class="sub">Ton second cerveau sur ton ordinateur — étape par étape, sans connaissance technique.</div>
+  </div>
+  <div class="docmeta">
+    DOC · SB-START<br>
+    V1.1 · REV. 2026-09<br>
+    MAC · WINDOWS<br>
+    30–45 MIN
+  </div>
+</div>
+
+<div class="online">
+  <span>Version en ligne, toujours à jour :</span>
+  <a href="https://github.com/D4rthur/second-brain-starter/blob/main/INSTALL.md">github.com/D4rthur/second-brain-starter</a>
+</div>
+
+<h2>Ce que tu vas installer</h2>
+<table>
+  <tr><th>Outil</th><th>À quoi il sert</th><th>Prix</th></tr>
+  <tr><td><b>Obsidian</b></td><td>L'app qui affiche ton cerveau : tes notes, reliées entre elles, comme un classeur intelligent.</td><td>Gratuit</td></tr>
+  <tr><td><b>Ton assistant IA</b></td><td>Claude <i>ou</i> ChatGPT, au choix. C'est lui qui construit ton cerveau et t'aide ensuite à le remplir.</td><td>Voir ci-dessous</td></tr>
+  <tr><td><b>Second Brain Starter</b></td><td>Le module qui apprend à ton assistant comment monter ton cerveau.</td><td>Gratuit</td></tr>
+</table>
+
+<h2>Claude ou ChatGPT ?</h2>
+<p>Prends celui que tu utilises déjà. Les deux donnent le même cerveau, et tu pourras changer plus tard sans rien refaire.</p>
+<table>
+  <tr><th></th><th>Claude</th><th>ChatGPT</th></tr>
+  <tr><td><b>App à installer</b></td><td>App <b>Claude</b>, onglet <b>Code</b></td><td>App <b>Codex</b> — la version « code » de ChatGPT, avec ton compte ChatGPT</td></tr>
+  <tr><td><b>Abonnement</b></td><td><b>Pro</b> minimum (environ 20 $/mois). Le plan gratuit ne suffit pas.</td><td>Possible dès le plan gratuit, mais limites vite atteintes. <b>Plus</b> recommandé.</td></tr>
+  <tr><td><b>Suis</b></td><td><span class="pathtag">Parcours A</span></td><td><span class="pathtag">Parcours B</span></td></tr>
+</table>
+<div class="note warn"><b>Important :</b> il faut l'<b>app de bureau</b> installée sur ton ordinateur. Le site web (claude.ai ou chatgpt.com dans le navigateur) ne peut pas créer de fichiers sur ton ordinateur.</div>
+<div class="note"><b>Où vivent tes notes ?</b> Dans un simple dossier sur ton ordinateur. Pas de compte Obsidian, pas de cloud. Quand tu poses une question à ton assistant, il lit les notes nécessaires pour te répondre.</div>
+
+<h2 class="pb">Étapes communes</h2>
+
+<div class="step">
+  <h3><span class="num">1</span> Installer Obsidian <span class="time">5 MIN</span></h3>
+  <ol>
+    <li>Va sur <span class="kbd">obsidian.md</span> → bouton <b>Download</b>.</li>
+    <li>Installe-le comme n'importe quelle app (Mac : glisse Obsidian dans <b>Applications</b> · Windows : suis l'installateur).</li>
+    <li>Ouvre-le une fois pour vérifier qu'il démarre. Pas besoin de compte. Tu peux le refermer.</li>
+  </ol>
+</div>
+
+<div class="step">
+  <h3><span class="num">2</span> Créer le dossier de ton cerveau <span class="time">1 MIN</span></h3>
+  <p>Crée un dossier vide nommé <b>second-brain</b>, là où tu ranges tes documents :</p>
+  <ul>
+    <li>Mac : <span class="kbd">Documents/second-brain</span></li>
+    <li>Windows : <span class="kbd">Documents\second-brain</span></li>
+  </ul>
+  <p>C'est <b>ce dossier</b> qui va contenir ton cerveau. Retiens où il est. Ensuite, suis <b>un seul</b> des deux parcours.</p>
+</div>
+
+<h2 class="path"><span class="pathtag">Parcours A</span> Avec Claude</h2>
+
+<div class="step">
+  <h3><span class="num">A1</span> Prendre l'abonnement Claude Pro <span class="time">5 MIN</span></h3>
+  <ol>
+    <li>Va sur <span class="kbd">claude.ai</span> et crée un compte (ou connecte-toi).</li>
+    <li>Passe au plan <b>Pro</b> (menu de ton profil → <i>Upgrade</i> / <i>Mettre à niveau</i>). Déjà Pro, Max ou Team ? Passe à A2.</li>
+  </ol>
+</div>
+
+<div class="step">
+  <h3><span class="num">A2</span> Installer l'app Claude <span class="time">5 MIN</span></h3>
+  <ol>
+    <li>Va sur <span class="kbd">claude.ai/download</span> et télécharge la version <b>Mac</b> ou <b>Windows</b>.</li>
+    <li>Installe-la, ouvre-la, connecte-toi.</li>
+  </ol>
+</div>
+
+<div class="step">
+  <h3><span class="num">A3</span> Ouvrir Claude dans ton dossier <span class="time">2 MIN</span></h3>
+  <ol>
+    <li>Dans l'app Claude, clique sur l'onglet <b>Code</b> (en haut).</li>
+    <li>Choisis ton dossier <b>second-brain</b> comme dossier de travail.</li>
+  </ol>
+  <div class="note">Pourquoi l'onglet <b>Code</b> ? C'est le mode où Claude a le droit de créer des fichiers dans ton dossier. Aucun code à écrire — tu lui parles en français.</div>
+</div>
+
+<div class="step">
+  <h3><span class="num">A4</span> Installer le Second Brain Starter <span class="time">2 MIN</span></h3>
+  <p>Dans la zone de texte, tape cette ligne puis <b>Entrée</b> :</p>
+  <div class="cmd">/plugin marketplace add D4rthur/second-brain-starter</div>
+  <p>Puis celle-ci, et <b>Entrée</b> :</p>
+  <div class="cmd">/plugin install second-brain-starter@arkytechs</div>
+  <p>Si Claude demande une confirmation, accepte. S'il propose de redémarrer la session, fais-le.</p>
+</div>
+
+<div class="step">
+  <h3><span class="num">A5</span> Monter ton cerveau <span class="time">15–20 MIN</span></h3>
+  <p>Écris simplement :</p>
+  <div class="cmd">Monte mon second cerveau</div>
+  <p>Puis passe à l'<b>étape finale</b>.</p>
+</div>
+
+<h2 class="path"><span class="pathtag">Parcours B</span> Avec ChatGPT (Codex)</h2>
+
+<div class="step">
+  <h3><span class="num">B1</span> Installer l'app Codex <span class="time">5 MIN</span></h3>
+  <ol>
+    <li>Va sur <span class="kbd">learn.chatgpt.com/docs/app</span> et télécharge l'app pour <b>Mac</b> ou <b>Windows</b>.</li>
+    <li>Installe-la, ouvre-la, connecte-toi avec ton compte ChatGPT.</li>
+  </ol>
+  <div class="note"><b>Codex</b>, c'est la version « code » de ChatGPT : le même compte, mais une app qui a le droit de créer des fichiers sur ton ordinateur. Aucun code à écrire — tu lui parles en français.</div>
+</div>
+
+<div class="step">
+  <h3><span class="num">B2</span> Télécharger le Second Brain Starter <span class="time">2 MIN</span></h3>
+  <ol>
+    <li>Va sur <span class="kbd">github.com/D4rthur/second-brain-starter</span>.</li>
+    <li>Clique le bouton vert <b>Code</b> → <b>Download ZIP</b>.</li>
+    <li>Décompresse le fichier (Mac : double-clic · Windows : clic droit → <i>Extraire tout</i>).</li>
+    <li>Tu obtiens un dossier <b>second-brain-starter-main</b>. Laisse-le dans <i>Téléchargements</i> — <b>pas dans second-brain</b>.</li>
+  </ol>
+</div>
+
+<div class="step">
+  <h3><span class="num">B3</span> Ouvrir Codex dans ce dossier <span class="time">2 MIN</span></h3>
+  <ol>
+    <li>Dans l'app Codex, choisis <b>Ouvrir un dossier</b> (<i>Open folder</i>).</li>
+    <li>Sélectionne le dossier <b>second-brain-starter-main</b>.</li>
+  </ol>
+  <div class="note">Pourquoi ce dossier-là ? Il contient le mode d'emploi (le fichier <span class="kbd">AGENTS.md</span>) que Codex lit tout seul pour savoir comment monter ton cerveau.</div>
+</div>
+
+<div class="step">
+  <h3><span class="num">B4</span> Monter ton cerveau <span class="time">15–20 MIN</span></h3>
+  <p>Écris (adapte le chemin si ton dossier est ailleurs) :</p>
+  <div class="cmd">Monte mon second cerveau dans Documents/second-brain</div>
+  <p>Codex va te demander la permission d'écrire dans <b>second-brain</b>, puisque ce dossier est en dehors de celui que tu as ouvert : <b>accepte</b>.</p>
+  <div class="note warn"><b>Sécurité :</b> garde le mode <b>« Demander l'approbation »</b> (<i>Ask for approval</i>), celui par défaut. N'active jamais « Accès complet » (<i>Full access</i>). Accepte seulement les demandes que tu comprends.</div>
+</div>
+
+<h2>Pendant la construction</h2>
+<p>Ton assistant te pose <b>9 questions</b>, une à la fois : ton nom, ton métier, tes domaines, tes projets… Réponds naturellement, comme à quelqu'un qui t'aide. Il construit ensuite ton cerveau dans <b>second-brain</b>, puis te pose quelques questions de plus pour le remplir. S'il demande la permission de créer des fichiers, accepte : c'est ton cerveau qui se construit.</p>
+
+<div class="step">
+  <h3><span class="num">✓</span> Étape finale — Ouvrir ton cerveau dans Obsidian <span class="time">5 MIN</span></h3>
+  <ol>
+    <li>Ouvre Obsidian → <b>Ouvrir un dossier comme coffre</b> (<i>Open folder as vault</i>) → choisis <b>second-brain</b>.</li>
+    <li>Tes dossiers apparaissent à gauche : Projects, Areas, Resources…</li>
+    <li>Active les modèles (une seule fois) : <b>Paramètres</b> (roue dentée en bas à gauche) → <b>Modules principaux</b> (<i>Core plugins</i>) :
+      <ul>
+        <li><b>Modèles</b> (<i>Templates</i>) → dossier des modèles : <span class="kbd">_templates</span></li>
+        <li><b>Notes quotidiennes</b> (<i>Daily notes</i>) → dossier : <span class="kbd">Daily-Notes</span> · modèle : <span class="kbd">_templates/daily</span></li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+<div class="step">
+  <h3><span class="num">✓</span> Vérifier que tout est branché <span class="time">1 MIN</span></h3>
+  <ol>
+    <li>Ferme ton assistant, puis rouvre-le <b>directement dans le dossier second-brain</b> (Claude : onglet Code → second-brain · Codex : Ouvrir un dossier → second-brain).</li>
+    <li>Demande : <b>« Résume ce que tu sais sur moi et mon cerveau. »</b></li>
+    <li>S'il te parle de ton rôle, de tes domaines et de tes projets → <b>c'est gagné.</b></li>
+  </ol>
+  <p>Parcours B : le dossier <b>second-brain-starter-main</b> ne sert plus, tu peux le supprimer.</p>
+</div>
+
+<h2>Au quotidien</h2>
+<ul>
+  <li><b>Capturer</b> : dis à ton assistant « note que… » ou « ajoute à ma note du jour… ». Il range au bon endroit.</li>
+  <li><b>Retrouver</b> : « Qu'est-ce que j'avais décidé pour… ? » — il cherche dans ton cerveau.</li>
+  <li><b>Réfléchir</b> : ouvre Obsidian et navigue dans tes notes.</li>
+</ul>
+<div class="note"><b>Règle d'or :</b> ouvre toujours ton assistant <b>dans le dossier second-brain</b>. Deux petits fichiers à sa racine, <span class="kbd">CLAUDE.md</span> et <span class="kbd">AGENTS.md</span>, lui rappellent qui tu es à chaque session. Ne les supprime pas.</div>
+
+<h2>Problème ?</h2>
+<table class="trouble">
+  <tr><th>Ce que tu vois</th><th>Quoi faire</th></tr>
+  <tr><td>Claude : pas d'onglet Code</td><td>Vérifie ton abonnement <b>Pro</b> (ou plus) et que l'app est à jour.</td></tr>
+  <tr><td>Claude : <span class="kbd">/plugin</span> ne répond pas</td><td>Tu es dans l'onglet <b>Chat</b> au lieu de <b>Code</b>. Change d'onglet.</td></tr>
+  <tr><td>Claude : « Monte mon second cerveau » ne déclenche rien</td><td>Tape plutôt <span class="kbd">/second-brain-starter:second-brain-starter</span></td></tr>
+  <tr><td>Codex : il ne sait pas quoi faire</td><td>Vérifie que tu as ouvert <b>second-brain-starter-main</b> (celui qui contient AGENTS.md et README.md), pas un sous-dossier. Puis écris : « Lis AGENTS.md et suis ses instructions. »</td></tr>
+  <tr><td>Codex : il refuse d'écrire dans second-brain</td><td>Il attend ton approbation : regarde s'il y a une demande en attente et accepte-la.</td></tr>
+  <tr><td>Codex : message de limite d'usage</td><td>Le plan gratuit est vite limité. Attends la réinitialisation, ou passe à <b>Plus</b>.</td></tr>
+  <tr><td>Le cerveau a été créé dans le dossier du starter</td><td>Demande : « Déplace mon cerveau dans Documents/second-brain ».</td></tr>
+  <tr><td>L'assistant ne se souvient plus de toi</td><td>Tu ne l'as pas ouvert dans <b>second-brain</b>. Vérifie aussi que CLAUDE.md et AGENTS.md sont à la racine du dossier.</td></tr>
+  <tr><td>Les notes du jour affichent {{date}}</td><td>Les modèles ne sont pas activés dans Obsidian → refais l'étape finale, point 3.</td></tr>
+  <tr><td>Tu es bloqué</td><td>Écris-nous sur <b>arkytechs.com</b>.</td></tr>
+</table>
+
+<footer>
+  <span>arkytechs<b>_</b> · arkytechs.com</span>
+  <span>Second Brain Starter · gratuit · MIT</span>
+</footer>
+
+</div>
+</body>
+</html>
