@@ -1,4 +1,4 @@
-# MOC — {Sujet}
+# MOC — {{title}}
 
 > Une Map of Content : une note-carte qui relie toutes tes notes sur un même sujet, peu importe leur dossier. Crée-la quand un sujet accumule 5+ notes reliées.
 

@@ -1,4 +1,4 @@
-# {Nom du projet}
+# {{title}}
 
 > Un projet = un effort avec un début et une fin. Quand c'est terminé, déplace cette note dans `04-Archive/`.
 
@@ -17,4 +17,4 @@
 
 ## Journal
 
-- {Date} — {ce qui a bougé}
+- {{date}} — {ce qui a bougé}

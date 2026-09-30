@@ -38,6 +38,7 @@ Crée ensuite cette structure dans le dossier choisi. La structure suit **PARA**
 
 ```
 {NomVault}/
+├── CLAUDE.md                      ← branche Claude sur le vault (lu automatiquement)
 ├── index.md                       ← la carte du vault
 ├── ai-assistant-instructions.md   ← instructions pour ton assistant IA
 ├── 00-About-Me/
@@ -61,6 +62,7 @@ Crée ensuite cette structure dans le dossier choisi. La structure suit **PARA**
 ```
 
 Remplis chaque fichier à partir des modèles dans `templates/` de ce skill, en injectant les réponses de l'intake :
+- `CLAUDE.md` ← `templates/CLAUDE.md` (**obligatoire** : c'est le seul fichier que Claude lit tout seul en ouvrant le dossier ; sans lui, l'assistant oublie le cerveau dès la session suivante)
 - `index.md` ← `templates/index.md` (carte personnalisée du vault)
 - `ai-assistant-instructions.md` ← `templates/ai-assistant-instructions.md` (rôle, ton, séquence de démarrage de l'assistant — calibrés sur la personne)
 - `00-About-Me/about-me.md` ← `templates/about-me.md` (qui elle est, comment elle décide)
@@ -69,15 +71,17 @@ Remplis chaque fichier à partir des modèles dans `templates/` de ce skill, en 
 - `MOCs/_exemple-moc.md` ← `templates/moc.md`
 - `Decisions/decision-log.md` ← `templates/decision-log.md`
 - `Daily-Notes/` ← laisser vide (la première note se crée au premier usage)
-- `_templates/*` ← copier les modèles bruts `project.md`, `area.md`, `moc.md`, `daily.md`
+- `_templates/*` ← copier les modèles bruts `project.md`, `area.md`, `moc.md`, `daily.md`, **en laissant `{{date}}` et `{{title}}` tels quels** (Obsidian les remplit lui-même à chaque nouvelle note)
 
-Remplace `{NomVault}`, `{Nom}`, `{Rôle}`, `{Secteur}`, `{Langue}` et les autres champs par les vraies valeurs de l'intake. Les fichiers `_exemple-*` servent de démonstration vivante — pré-remplis-les avec le contexte réel de la personne quand c'est possible.
+Dans les notes réelles (hors `_templates/`), remplace `{{date}}` par la date du jour et `{{title}}` par le nom de la note. Remplace `{NomVault}`, `{Nom}`, `{Rôle}`, `{Secteur}`, `{Langue}` et les autres champs par les vraies valeurs de l'intake. Les fichiers `_exemple-*` servent de démonstration vivante — pré-remplis-les avec le contexte réel de la personne quand c'est possible.
 
 Si tu n'as **pas** accès au système de fichiers (ex. Claude.ai web), génère chaque fichier en bloc de code et dis à la personne de les créer manuellement dans Obsidian. Mais le chemin recommandé reste Claude Code ou Claude Desktop avec accès au dossier.
 
 ## Étape 3 — Checklist client (en parallèle)
 
-Affiche la checklist de `reference/client-checklist.md`. Ce sont les gestes manuels que la personne fait de son côté pendant/après le scaffold : installer Obsidian, ouvrir le dossier comme vault, classer ses documents existants, connecter son assistant IA au dossier.
+Affiche la checklist de `reference/client-checklist.md`. Ce sont les gestes manuels que la personne fait de son côté pendant/après le scaffold : installer Obsidian, ouvrir le dossier comme vault, activer les modèles, classer ses documents existants, vérifier que l'assistant est branché.
+
+Si la session Claude n'a pas été ouverte **dans** le dossier du vault, dis-le clairement : pour que l'assistant retrouve le cerveau aux prochaines sessions, il faut ouvrir Claude dans ce dossier (c'est là qu'il trouve `CLAUDE.md`).
 
 ## Étape 4 — Complétion
 
