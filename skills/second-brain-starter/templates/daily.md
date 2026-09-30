@@ -1,4 +1,4 @@
-# {Date}
+# {{date}}
 
 > Capture rapide du jour. Le classement vient après — ici, tu déposes.
 

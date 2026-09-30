@@ -4,6 +4,9 @@
     "name": "Arkytechs",
     "url": "https://arkytechs.com"
   },
+  "metadata": {
+    "description": "Skills gratuits d'Arkytechs pour monter et opérer ton second cerveau."
+  },
   "plugins": [
     {
       "name": "second-brain-starter",

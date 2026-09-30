@@ -1,7 +1,7 @@
 {
   "name": "second-brain-starter",
   "description": "Monte un second cerveau personnel dans un vault Obsidian local : intake, scaffold de la structure, et assistant IA calibré. Gratuit, offert par Arkytechs.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Arkytechs",
     "url": "https://arkytechs.com"

@@ -1,4 +1,4 @@
-# {Nom du domaine}
+# {{title}}
 
 > Un domaine = une responsabilité continue, sans date de fin. Tu y tiens un standard.
 

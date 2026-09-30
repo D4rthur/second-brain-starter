@@ -2,6 +2,8 @@
 
 Monte ton second cerveau en local — gratuitement, en une session.
 
+> **👉 Première fois ? Suis le [guide d'installation pas à pas](INSTALL.md)** — Mac ou Windows, aucune connaissance technique requise, environ 30-45 minutes.
+
 Un second cerveau n'est pas un dossier de notes. C'est un système qui externalise ta charge mentale, relie tes idées, et fait remonter la bonne information au bon moment — pour que tu penses mieux et décides plus vite.
 
 Ce skill te le construit. Tu réponds à quelques questions, il scaffold un vault Obsidian structuré sur ta machine, et tu repars avec un cerveau déjà utile, connecté à ton assistant IA.
@@ -11,23 +13,23 @@ Ce skill te le construit. Tu réponds à quelques questions, il scaffold un vaul
 - Un vault Obsidian local, organisé selon deux méthodes éprouvées (PARA + cartes de contenu).
 - Des templates prêts à l'emploi : projets, domaines, décisions, notes quotidiennes.
 - Un assistant IA calibré sur toi, qui lit ton vault et t'aide à capturer, relier et retrouver.
-- Tout reste sur ta machine. Aucun cloud, aucun compte, aucune donnée qui sort.
+- Tes notes restent dans un dossier sur ta machine. Pas de compte Obsidian, pas de cloud. Claude lit seulement ce dont il a besoin pour te répondre.
 
 ## Prérequis
 
 - [Obsidian](https://obsidian.md) — gratuit.
-- Claude Code ou Claude Desktop avec accès à un dossier, pour connecter ton assistant au vault.
+- L'app [Claude](https://claude.ai/download) (Mac ou Windows) avec un abonnement **Pro** ou plus — le plan gratuit n'inclut pas l'onglet Code, nécessaire pour créer les fichiers.
 
 ## Installation
 
-**Claude Code** (par lien, 2 commandes) :
+Dans l'app Claude, onglet **Code**, dossier de ton vault ouvert (ou dans Claude Code en terminal) :
 
 ```
 /plugin marketplace add D4rthur/second-brain-starter
 /plugin install second-brain-starter@arkytechs
 ```
 
-Puis invoque « monte mon second cerveau ». Détails et install Claude Desktop : voir [INSTALL.md](INSTALL.md).
+Puis écris « monte mon second cerveau ». Chaque étape expliquée + dépannage : [INSTALL.md](INSTALL.md).
 
 Ensuite : réponds à l'intake → le skill scaffold ton vault et te donne la checklist Obsidian → tu ouvres le dossier comme vault. Ton cerveau est vivant.
 
