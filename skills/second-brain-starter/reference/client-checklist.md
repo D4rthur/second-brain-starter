@@ -37,13 +37,13 @@ Pendant que l'assistant monte le squelette, voici les gestes manuels à faire to
 
 ## 5. Vérifier que ton assistant est branché
 
-- [ ] Ferme Claude, puis rouvre-le **dans le dossier de ton vault** (c'est là qu'il trouve `CLAUDE.md`, le fichier qui le branche sur ton cerveau).
+- [ ] Ferme ton assistant (Claude ou Codex), puis rouvre-le **dans le dossier de ton vault** (c'est là qu'il trouve `CLAUDE.md` / `AGENTS.md`, les fichiers qui le branchent sur ton cerveau).
 - [ ] Demande : « Résume ce que tu sais sur moi et mon cerveau. »
-- [ ] S'il répond avec ton rôle, tes domaines et tes projets, c'est branché. Sinon, vérifie que `CLAUDE.md` est bien à la racine du vault.
+- [ ] S'il répond avec ton rôle, tes domaines et tes projets, c'est branché. Sinon, vérifie que `CLAUDE.md` et `AGENTS.md` sont bien à la racine du vault.
 
 ## 6. Premier usage
 
-- [ ] Crée ta première daily note (icône calendrier dans Obsidian, ou demande à Claude « ouvre ma note du jour »).
+- [ ] Crée ta première daily note (icône calendrier dans Obsidian, ou demande à ton assistant « ouvre ma note du jour »).
 - [ ] Note une idée, une tâche, une décision du jour.
 - [ ] Demande à ton assistant de la relier à un projet ou un domaine existant.
 

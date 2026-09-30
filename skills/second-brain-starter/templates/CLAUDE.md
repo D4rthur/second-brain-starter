@@ -1,6 +1,6 @@
 # {NomVault} — second cerveau de {Nom}
 
-> Ce fichier est lu automatiquement par Claude à chaque session ouverte dans ce dossier. Il branche l'assistant sur le cerveau. Ne le renomme pas, ne le déplace pas.
+> Ce fichier est lu automatiquement par Claude à chaque session ouverte dans ce dossier. Il branche l'assistant sur le cerveau. Ne le renomme pas, ne le déplace pas. Son jumeau `AGENTS.md` fait la même chose pour Codex (ChatGPT).
 
 Au début de chaque session, avant de répondre :
 
