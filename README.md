@@ -2,7 +2,7 @@
 
 Monte ton second cerveau en local — gratuitement, en une session.
 
-> **👉 Première fois ? Suis le [guide d'installation pas à pas](INSTALL.md)** — Mac ou Windows, avec **Claude ou ChatGPT**, aucune connaissance technique requise, environ 30-45 minutes.
+> **👉 Première fois ? Suis le [guide d'installation pas à pas](INSTALL.md)** — Mac ou Windows, avec **Claude ou ChatGPT**, aucune connaissance technique requise, environ 30-45 minutes. Aussi en **[PDF à imprimer ou partager](guide/second-brain-starter-guide.pdf)**.
 
 Un second cerveau n'est pas un dossier de notes. C'est un système qui externalise ta charge mentale, relie tes idées, et fait remonter la bonne information au bon moment — pour que tu penses mieux et décides plus vite.
 
@@ -20,7 +20,7 @@ Ce skill te le construit. Tu réponds à quelques questions, il scaffold un vaul
 - [Obsidian](https://obsidian.md) — gratuit.
 - Un assistant IA **en app de bureau** (le site web ne peut pas créer de fichiers sur ton ordinateur), au choix :
   - l'app [Claude](https://claude.ai/download) avec un abonnement **Pro** ou plus (onglet Code) ;
-  - l'app [ChatGPT de bureau](https://learn.chatgpt.com/docs/app) (anciennement Codex) — plan gratuit possible, **Plus** recommandé.
+  - l'app [Codex](https://learn.chatgpt.com/docs/app), la version « code » de ChatGPT, avec ton compte ChatGPT — plan gratuit possible, **Plus** recommandé.
 
 ## Installation
 
@@ -33,7 +33,7 @@ Ce skill te le construit. Tu réponds à quelques questions, il scaffold un vaul
 
 Puis écris « monte mon second cerveau ».
 
-**Avec ChatGPT** — télécharge ce repo (bouton **Code → Download ZIP**), décompresse-le, ouvre le dossier dans l'app ChatGPT de bureau et écris « monte mon second cerveau dans Documents/Mon-Cerveau ». Le fichier `AGENTS.md` guide ChatGPT.
+**Avec ChatGPT** — télécharge ce repo (bouton **Code → Download ZIP**), décompresse-le, ouvre le dossier dans l'app Codex et écris « monte mon second cerveau dans Documents/second-brain ». Le fichier `AGENTS.md` guide Codex.
 
 Chaque étape expliquée + dépannage : [INSTALL.md](INSTALL.md).
 

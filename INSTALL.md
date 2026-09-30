@@ -2,6 +2,7 @@
 
 > Pour tout le monde, même si tu n'as jamais touché à du code. Compte **30 à 45 minutes**, installation et première session incluses.
 > Fonctionne sur **Mac** et **Windows**, avec **Claude** ou avec **ChatGPT**.
+> Version PDF à imprimer ou partager : [second-brain-starter-guide.pdf](guide/second-brain-starter-guide.pdf).
 
 ## Ce que tu vas installer (et pourquoi)
 
@@ -17,9 +18,9 @@ Prends celui que tu utilises déjà. Les deux donnent le même cerveau, et tu po
 
 | | **Claude** | **ChatGPT** |
 |---|---|---|
-| App à installer | App **Claude** (onglet **Code**) | App **ChatGPT** de bureau (anciennement « Codex ») |
+| App à installer | App **Claude** (onglet **Code**) | App **Codex** — la version « code » de ChatGPT, avec ton compte ChatGPT |
 | Abonnement | **Pro** minimum (environ 20 $/mois) — le plan gratuit ne suffit pas | Fonctionne dès le plan gratuit, mais avec des limites d'usage vite atteintes · **Plus** recommandé |
-| Suis | [Parcours A](#parcours-a--avec-claude) | [Parcours B](#parcours-b--avec-chatgpt) |
+| Suis | [Parcours A](#parcours-a--avec-claude) | [Parcours B](#parcours-b--avec-chatgpt-codex) |
 
 > **Important :** il faut l'**app de bureau** installée sur ton ordinateur. Le site web (claude.ai ou chatgpt.com dans le navigateur) ne peut pas créer de fichiers sur ton ordinateur.
 
@@ -39,8 +40,8 @@ Prends celui que tu utilises déjà. Les deux donnent le même cerveau, et tu po
 
 Crée un dossier vide, là où tu ranges tes documents. Par exemple :
 
-- Mac : `Documents/Mon-Cerveau`
-- Windows : `Documents\Mon-Cerveau`
+- Mac : `Documents/second-brain`
+- Windows : `Documents\second-brain`
 
 C'est **ce dossier** qui va contenir ton cerveau. Retiens où il est.
 
@@ -65,7 +66,7 @@ Ensuite, suis **un seul** des deux parcours.
 ### A3. Ouvrir Claude dans ton dossier (2 min)
 
 1. Dans l'app Claude, clique sur l'onglet **Code** (en haut).
-2. Choisis ton dossier `Mon-Cerveau` comme dossier de travail.
+2. Choisis ton dossier `second-brain` comme dossier de travail.
 
 > Pourquoi l'onglet **Code** ? C'est le mode où Claude a le droit de créer des fichiers dans ton dossier. Aucun code à écrire — tu lui parles en français, normalement.
 
@@ -93,34 +94,34 @@ Si Claude demande une confirmation, accepte. S'il propose de redémarrer la sess
 
 ---
 
-## Parcours B — avec ChatGPT
+## Parcours B — avec ChatGPT (Codex)
 
-### B1. Installer l'app ChatGPT de bureau (5 min)
+### B1. Installer l'app Codex (5 min)
 
 1. Va sur **https://learn.chatgpt.com/docs/app** et télécharge l'app pour **Mac** ou **Windows**.
 2. Installe-la, ouvre-la, connecte-toi avec ton compte ChatGPT.
 
-> C'est l'app qui s'appelait avant « Codex ». Sur Mac, le fichier téléchargé peut encore s'appeler `Codex.dmg` — c'est normal.
+> **Codex**, c'est la version « code » de ChatGPT : le même compte, mais une app qui a le droit de créer des fichiers sur ton ordinateur. Aucun code à écrire — tu lui parles en français, normalement.
 
 ### B2. Télécharger le Second Brain Starter (2 min)
 
 1. Va sur **https://github.com/D4rthur/second-brain-starter**.
 2. Clique le bouton vert **Code** → **Download ZIP**.
 3. Décompresse le fichier (double-clic sur Mac · clic droit → *Extraire tout* sur Windows).
-4. Tu obtiens un dossier `second-brain-starter-main`. Laisse-le dans *Téléchargements*, ou range-le où tu veux — **mais pas dans `Mon-Cerveau`**.
+4. Tu obtiens un dossier `second-brain-starter-main`. Laisse-le dans *Téléchargements*, ou range-le où tu veux — **mais pas dans `second-brain`**.
 
-### B3. Ouvrir ChatGPT dans ce dossier (2 min)
+### B3. Ouvrir Codex dans ce dossier (2 min)
 
-1. Dans l'app ChatGPT, choisis **Ouvrir un dossier** (*Open folder*).
+1. Dans l'app Codex, choisis **Ouvrir un dossier** (*Open folder*).
 2. Sélectionne le dossier `second-brain-starter-main` que tu viens de décompresser.
 
-> Pourquoi ce dossier-là ? Il contient le mode d'emploi (le fichier `AGENTS.md`) que ChatGPT lit tout seul pour savoir comment monter ton cerveau.
+> Pourquoi ce dossier-là ? Il contient le mode d'emploi (le fichier `AGENTS.md`) que Codex lit tout seul pour savoir comment monter ton cerveau.
 
 ### B4. Monter ton cerveau (15-20 min)
 
-Écris : **« Monte mon second cerveau dans Documents/Mon-Cerveau »** (adapte le chemin si ton dossier est ailleurs).
+Écris : **« Monte mon second cerveau dans Documents/second-brain »** (adapte le chemin si ton dossier est ailleurs).
 
-ChatGPT va te demander la permission d'écrire dans `Mon-Cerveau`, puisque ce dossier est en dehors de celui que tu as ouvert : **accepte**. C'est la seule autorisation spéciale dont il a besoin.
+Codex va te demander la permission d'écrire dans `second-brain`, puisque ce dossier est en dehors de celui que tu as ouvert : **accepte**. C'est la seule autorisation spéciale dont il a besoin.
 
 > **Sécurité :** garde le mode **« Demander l'approbation »** (*Ask for approval*), celui par défaut. N'active jamais « Accès complet » (*Full access*). Accepte seulement les demandes que tu comprends.
 
@@ -130,13 +131,13 @@ ChatGPT va te demander la permission d'écrire dans `Mon-Cerveau`, puisque ce do
 
 ## Pendant la construction (les deux parcours)
 
-Ton assistant va te poser **9 questions**, une à la fois : ton nom, ton métier, tes domaines, tes projets… Réponds naturellement, comme à quelqu'un qui t'aide. Il construit ensuite ton cerveau dans `Mon-Cerveau`, puis te pose quelques questions de plus pour le remplir.
+Ton assistant va te poser **9 questions**, une à la fois : ton nom, ton métier, tes domaines, tes projets… Réponds naturellement, comme à quelqu'un qui t'aide. Il construit ensuite ton cerveau dans `second-brain`, puis te pose quelques questions de plus pour le remplir.
 
 Il te demandera parfois la permission de créer des fichiers : accepte, c'est ton cerveau qui se construit.
 
 ## Étape finale — Ouvrir ton cerveau dans Obsidian (5 min)
 
-1. Ouvre Obsidian → **Ouvrir un dossier comme coffre** (*Open folder as vault*) → choisis `Mon-Cerveau`.
+1. Ouvre Obsidian → **Ouvrir un dossier comme coffre** (*Open folder as vault*) → choisis `second-brain`.
 2. Tu vois tes dossiers à gauche : Projects, Areas, Resources, etc.
 3. Active les modèles (une seule fois) :
    - **Paramètres** (roue dentée en bas à gauche) → **Modules principaux** (*Core plugins*).
@@ -145,9 +146,9 @@ Il te demandera parfois la permission de créer des fichiers : accepte, c'est to
 
 ## Vérifier que tout est branché (1 min)
 
-1. Ferme ton assistant, rouvre-le **directement dans le dossier `Mon-Cerveau`** :
-   - Claude : onglet **Code** → dossier `Mon-Cerveau`.
-   - ChatGPT : **Ouvrir un dossier** → `Mon-Cerveau` (plus le dossier du starter).
+1. Ferme ton assistant, rouvre-le **directement dans le dossier `second-brain`** :
+   - Claude : onglet **Code** → dossier `second-brain`.
+   - Codex : **Ouvrir un dossier** → `second-brain` (plus le dossier du starter).
 2. Demande : **« Résume ce que tu sais sur moi et mon cerveau. »**
 3. S'il te parle de ton rôle, de tes domaines et de tes projets → **c'est gagné.**
 
@@ -161,12 +162,12 @@ Le dossier `second-brain-starter-main` (parcours B) ne sert plus : tu peux le su
 - **Retrouver** : « Qu'est-ce que j'avais décidé pour… ? » — il cherche dans ton cerveau.
 - **Relire, réfléchir** : ouvre Obsidian, navigue dans tes notes.
 
-**Règle d'or** : ouvre toujours ton assistant **dans le dossier `Mon-Cerveau`**. Deux petits fichiers à la racine, `CLAUDE.md` (pour Claude) et `AGENTS.md` (pour ChatGPT), lui rappellent qui tu es à chaque session. Ne les supprime pas.
+**Règle d'or** : ouvre toujours ton assistant **dans le dossier `second-brain`**. Deux petits fichiers à la racine, `CLAUDE.md` (pour Claude) et `AGENTS.md` (pour Codex), lui rappellent qui tu es à chaque session. Ne les supprime pas.
 
 ## Mettre à jour le module
 
 - **Claude** : dans l'onglet Code, tape `/plugin` → **Installed** → *second-brain-starter* → **Update now**.
-- **ChatGPT** : rien à faire pour ton cerveau existant. Pour un nouveau cerveau, retélécharge le ZIP (étape B2).
+- **Codex** : rien à faire pour ton cerveau existant. Pour un nouveau cerveau, retélécharge le ZIP (étape B2).
 
 ---
 
@@ -177,11 +178,11 @@ Le dossier `second-brain-starter-main` (parcours B) ne sert plus : tu peux le su
 | **Claude** : pas d'onglet **Code** | Vérifie ton abonnement **Pro** (ou plus) et que l'app est à jour. |
 | **Claude** : `/plugin` ne répond pas | Tu es dans l'onglet **Chat** au lieu de **Code**. Change d'onglet. |
 | **Claude** : « Monte mon second cerveau » ne déclenche rien | Tape plutôt `/second-brain-starter:second-brain-starter`. |
-| **ChatGPT** : il ne sait pas quoi faire | Vérifie que tu as ouvert le dossier `second-brain-starter-main` (celui qui contient `AGENTS.md` et `README.md`), pas un sous-dossier. Puis écris : « Lis AGENTS.md et suis ses instructions. » |
-| **ChatGPT** : il refuse d'écrire dans `Mon-Cerveau` | Il attend ton approbation : regarde s'il y a une demande en attente et accepte-la. |
-| **ChatGPT** : message de limite d'usage | Le plan gratuit est vite limité. Attends la réinitialisation, ou passe à **Plus**. |
-| Il a créé ton cerveau dans le dossier du starter | Déplace tout son contenu dans `Mon-Cerveau`, ou demande-lui : « Déplace mon cerveau dans Documents/Mon-Cerveau ». |
-| L'assistant ne se souvient plus de toi | Tu ne l'as pas ouvert dans `Mon-Cerveau`. Vérifie aussi que `CLAUDE.md` et `AGENTS.md` sont à la racine du dossier. |
+| **Codex** : il ne sait pas quoi faire | Vérifie que tu as ouvert le dossier `second-brain-starter-main` (celui qui contient `AGENTS.md` et `README.md`), pas un sous-dossier. Puis écris : « Lis AGENTS.md et suis ses instructions. » |
+| **Codex** : il refuse d'écrire dans `second-brain` | Il attend ton approbation : regarde s'il y a une demande en attente et accepte-la. |
+| **Codex** : message de limite d'usage | Le plan gratuit est vite limité. Attends la réinitialisation, ou passe à **Plus**. |
+| Il a créé ton cerveau dans le dossier du starter | Déplace tout son contenu dans `second-brain`, ou demande-lui : « Déplace mon cerveau dans Documents/second-brain ». |
+| L'assistant ne se souvient plus de toi | Tu ne l'as pas ouvert dans `second-brain`. Vérifie aussi que `CLAUDE.md` et `AGENTS.md` sont à la racine du dossier. |
 | Les notes du jour affichent `{{date}}` | Les modèles ne sont pas activés dans Obsidian → refais l'étape finale, point 3. |
 | Tu es bloqué | Écris-nous sur [arkytechs.com](https://arkytechs.com). |
 
