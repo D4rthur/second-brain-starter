@@ -2,7 +2,7 @@
 
 Monte ton second cerveau en local — gratuitement, en une session.
 
-> **👉 Première fois ? Suis le [guide d'installation pas à pas](INSTALL.md)** — Mac ou Windows, aucune connaissance technique requise, environ 30-45 minutes.
+> **👉 Première fois ? Suis le [guide d'installation pas à pas](INSTALL.md)** — Mac ou Windows, avec **Claude ou ChatGPT**, aucune connaissance technique requise, environ 30-45 minutes.
 
 Un second cerveau n'est pas un dossier de notes. C'est un système qui externalise ta charge mentale, relie tes idées, et fait remonter la bonne information au bon moment — pour que tu penses mieux et décides plus vite.
 
@@ -18,18 +18,24 @@ Ce skill te le construit. Tu réponds à quelques questions, il scaffold un vaul
 ## Prérequis
 
 - [Obsidian](https://obsidian.md) — gratuit.
-- L'app [Claude](https://claude.ai/download) (Mac ou Windows) avec un abonnement **Pro** ou plus — le plan gratuit n'inclut pas l'onglet Code, nécessaire pour créer les fichiers.
+- Un assistant IA **en app de bureau** (le site web ne peut pas créer de fichiers sur ton ordinateur), au choix :
+  - l'app [Claude](https://claude.ai/download) avec un abonnement **Pro** ou plus (onglet Code) ;
+  - l'app [ChatGPT de bureau](https://learn.chatgpt.com/docs/app) (anciennement Codex) — plan gratuit possible, **Plus** recommandé.
 
 ## Installation
 
-Dans l'app Claude, onglet **Code**, dossier de ton vault ouvert (ou dans Claude Code en terminal) :
+**Avec Claude** — dans l'app Claude, onglet **Code**, dossier de ton vault ouvert (ou dans Claude Code en terminal) :
 
 ```
 /plugin marketplace add D4rthur/second-brain-starter
 /plugin install second-brain-starter@arkytechs
 ```
 
-Puis écris « monte mon second cerveau ». Chaque étape expliquée + dépannage : [INSTALL.md](INSTALL.md).
+Puis écris « monte mon second cerveau ».
+
+**Avec ChatGPT** — télécharge ce repo (bouton **Code → Download ZIP**), décompresse-le, ouvre le dossier dans l'app ChatGPT de bureau et écris « monte mon second cerveau dans Documents/Mon-Cerveau ». Le fichier `AGENTS.md` guide ChatGPT.
+
+Chaque étape expliquée + dépannage : [INSTALL.md](INSTALL.md).
 
 Ensuite : réponds à l'intake → le skill scaffold ton vault et te donne la checklist Obsidian → tu ouvres le dossier comme vault. Ton cerveau est vivant.
 

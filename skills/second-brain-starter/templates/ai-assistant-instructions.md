@@ -1,6 +1,6 @@
 # Instructions — Assistant de {NomVault}
 
-> Le mode d'emploi de ton assistant IA : son rôle, son ton, ce qu'il lit en démarrant. Claude le charge tout seul à chaque session grâce au fichier `CLAUDE.md` à la racine du vault — tu n'as rien à faire.
+> Le mode d'emploi de ton assistant IA : son rôle, son ton, ce qu'il lit en démarrant. Il est chargé tout seul à chaque session grâce aux fichiers `CLAUDE.md` (Claude) et `AGENTS.md` (Codex / ChatGPT) à la racine du vault — tu n'as rien à faire.
 
 ## Qui tu es (l'assistant)
 
