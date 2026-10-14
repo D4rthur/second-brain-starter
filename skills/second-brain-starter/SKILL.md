@@ -7,11 +7,12 @@ description: Monte un second cerveau personnel dans un vault Obsidian local. Uti
 
 Monte un second cerveau personnel : un vault Obsidian local qui externalise la charge mentale, relie les idées, et fait remonter la bonne information au bon moment.
 
-Ce skill fait 4 choses, dans l'ordre :
+Ce skill fait 5 choses, dans l'ordre :
 1. **Intake** — comprendre qui est la personne et comment elle travaille.
 2. **Scaffold** — créer le squelette du vault (dossiers + templates + fichier assistant).
 3. **Checklist** — donner les étapes manuelles à faire en parallèle (Obsidian, dossier, documents).
 4. **Complétion** — enrichir le second cerveau avec quelques questions ciblées.
+5. **Réglages et anciens projets** — régler l'assistant et rapatrier les projets Claude ou ChatGPT existants.
 
 ## Principe à garder en tête
 
@@ -87,6 +88,12 @@ Si la session n'a pas été ouverte **dans** le dossier du vault, dis-le clairem
 ## Étape 4 — Complétion
 
 Une fois le squelette en place, pose les questions de `reference/completion-questions.md` pour densifier le cerveau : premiers projets, premières décisions à logger, premières ressources à classer. Crée les notes correspondantes au fil des réponses.
+
+## Étape 5 — Réglages et anciens projets
+
+Affiche `reference/assistant-setup.md` : le texte à coller dans les instructions personnelles de Claude ou de ChatGPT, et les réglages de base. Remplace les crochets par les réponses de l'intake avant de l'afficher.
+
+Demande ensuite si la personne travaillait déjà avec des **projets** (Claude, Cowork ou ChatGPT). Si oui, affiche `reference/project-migration.md` et propose de commencer par le projet le plus utilisé. Quand elle colle une fiche d'export, range-la comme indiqué à l'étape 2 de ce fichier, sans écraser aucune note.
 
 Termine en montrant à la personne **comment utiliser son cerveau au quotidien** : ouvrir une daily note, capturer une idée en un geste, demander à son assistant IA de relier ou retrouver quelque chose.
 
