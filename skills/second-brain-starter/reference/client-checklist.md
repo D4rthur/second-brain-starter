@@ -41,7 +41,13 @@ Pendant que l'assistant monte le squelette, voici les gestes manuels à faire to
 - [ ] Demande : « Résume ce que tu sais sur moi et mon cerveau. »
 - [ ] S'il répond avec ton rôle, tes domaines et tes projets, c'est branché. Sinon, vérifie que `CLAUDE.md` et `AGENTS.md` sont bien à la racine du vault.
 
-## 6. Premier usage
+## 6. Régler ton assistant et rapatrier tes projets
+
+- [ ] Colle tes instructions personnelles dans Claude ou ChatGPT (ton assistant te donne le texte, déjà rempli).
+- [ ] Vérifie la mémoire et les réglages de base.
+- [ ] Tu avais des projets Claude ou ChatGPT ? Rapatrie-les un par un : ton assistant te donne les deux textes à copier.
+
+## 7. Premier usage
 
 - [ ] Crée ta première daily note (icône calendrier dans Obsidian, ou demande à ton assistant « ouvre ma note du jour »).
 - [ ] Note une idée, une tâche, une décision du jour.

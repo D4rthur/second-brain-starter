@@ -156,6 +156,16 @@ Le dossier `second-brain-starter-main` (parcours B) ne sert plus : tu peux le su
 
 ---
 
+## Régler ton assistant et rapatrier tes projets (10 min)
+
+À la fin, ton assistant te donne :
+
+1. **Un texte à coller dans tes instructions personnelles** — Claude : tes initiales → **Settings** → **General** → **Instructions for Claude** · ChatGPT : **Settings** → **Personalization** → **Custom Instructions**. Il te reconnaîtra dans toutes tes conversations.
+2. **Les réglages de mémoire à vérifier.**
+3. **Deux textes pour rapatrier tes anciens projets** Claude ou ChatGPT : le premier se colle dans l'ancien projet, le second dans ton cerveau. Un projet à la fois. Ensuite, plus besoin de travailler projet par projet.
+
+---
+
 ## Au quotidien
 
 - **Capturer** : dis à ton assistant « note que… » ou « ajoute à ma note du jour… ». Il range au bon endroit.
